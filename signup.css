@@ -1,0 +1,114 @@
+main {
+    height: auto;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  #box {
+    width: 70%;
+    margin: auto;
+  }
+  h1 {
+    margin: 20px 0px 10px 0px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: RGB(32, 35, 64);
+  }
+  h2 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: RGB(32, 35, 64);
+    margin: 20px 0px 10px 0px;
+  }
+  #details div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .account {
+    width: 430px;
+    padding: 11px;
+    margin-top: -12px;
+    margin-bottom: 15px;
+  }
+  #details div div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  #details div:nth-child(2) {
+    flex-direction: column;
+  }
+  
+  ::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  label {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  td {
+    width: 300px;
+  }
+  form p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  form div:nth-child(4) {
+    height: 40px;
+  
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: RGB(32, 35, 64);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .squarebox {
+    width: 42px;
+    height: 20px;
+  }
+  input[type="checkbox"] {
+  }
+  #mobnumber {
+    margin-top: 5px;
+  }
+  #email1 {
+    margin-top: 5px;
+  }
+  form div:nth-child(9) {
+    border-radius: 2px solid red;
+  }
+  #deals div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  form {
+  }
+  #end input {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: RGB(32, 35, 64);
+    color: white;
+    font-weight: 700;
+    margin: 10px 0px 15px 0px;
+  }
+  #end p {
+    font-size: 14px;
+    line-height: 20px;
+  
+    color: white;
+    font-weight: 400;
+    color: RGB(32, 35, 64);
+  }

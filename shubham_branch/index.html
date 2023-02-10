@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.com</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d042af9a63.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+
+</head>
+<body>
+
+    <div class="top-section">
+        <p>1st time customers save 25% on SHOP.COM exclusive brands using code FIRST250FF. Max $25 discount. Terms Apply. <span style="text-decoration: underline;">Click Here</span> </p>
+    </div>
+    <!-- ...................................Whole NavBar Section...................... -->
+    <div class="navbar">
+
+        <div class="nav-first-section">
+<!-- ............................logo-div(1st-part-of-navbar)......................................................... -->
+    <div class="logo" style="flex:1 ; width:30%">
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="" style="flex:1 ; width:40%">
+    </div>
+
+<!-- ............................Input-section-div(1st-part-of-navbar)......................................................... -->
+<div class="input-section" style="flex:2 ">
+    <form action="" id="form" style="display: flex;">
+    <select id="NamesSorting">
+        <option value="empty">All Departments</option>
+        <option value="Auto">Auto</option>
+        <option value="Beauty">Beauty</option>
+        <option value="Books">Books</option>
+        <option value="Business">Business</option>
+        <option value="Cameras">Cameras</option>
+        <option value="Clothes">Clothes</option>
+        </select>
+        <div style="display: flex; width: 100%; border-left:1px solid black;">
+        <input id="search" type="text" placeholder="Search SHOP.COM..." class="nav-bar-input">
+        <i id="mic"class="fa-solid fa-microphone"></i>
+        <button class="btn1">
+            <i class="fa fa-search" aria-hidden="true" style="color:white"></i>
+        </button>
+    </div>
+    </form>
+    </div>
+    <!-- ............................LayeredSale div img section(1st-part-of-navbar)......................................................... -->
+
+    <div class="second-logo" style="flex:1 ">
+        <img src="https://img.shop.com/Image/header2013/shop-US-CA-AU-ENG-97613-valentines-day-2022-banners-300x501673460827095.png" alt="">
+    </div>
+
+    </div>  
+<!-- ................................1st part of navbar ended here -->
+
+<!-- ................................2ndst part of navbar started from here............................ -->
+    <div class="nav-second-section">
+
+        <div id="navigation">
+   
+    <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </div>
+  
+    <ul class="nav" id="nav">
+        <h4>Categories</h4>
+        <li><a href="#">Onecart Exclusive Deals</a></li>
+        <li><a href="womenCloths.html">Women Dresses</a></li>
+        <li><a href="WomenShoes.html">Women Dresses</a></li>
+        <li><a href="MenShoes.html">Shoes</a></li>
+        <li><a href="MakeUp.html">Beauty</a></li>
+        <li><a href="HomePro.html">Home</a></li>
+        <li><a href="jwellery.html">Jewelry</a></li>
+        <li><a href="Kids.html">Kids</a></li>
+        <li><a href="Pet.html">Pet Supplies</a></li>
+        <li><a href="Food.html">Food & Drink</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="electronic.html">Electronics</a></li>
+        <li><a href="health.html">Healths & Nutrition</a></li>
+        <li><a href="#">Travel</a></li>
+    </ul>
+</div>
+
+<div class="child">
+    <a href="Jewellery">Exclusive Brands</a>
+    <a href="womenCloths.html">Stores</a>
+    <a href="">Deals</a>
+    <a href="">SHOP Travel</a>
+    <a href="">Departments</a>
+    <a href="">ShopBuddy</a>
+    <a href="HomePro.html">SHOP Local</a>
+</div>
+
+    <div class="child-second-section">
+    
+        <a href="signin.html" class="signIn none" id="signin-page1" >
+            <i class="fa-solid fa-circle-user " style="font-size: 1.7rem ;padding-right: 7px;"></i> 
+            <span id="user-name1">Sign In</span> 
+        </a>
+
+        <a href="orderpage.html" class="signIn" id="order-page1"><i class="fa-solid fa-rotate-left"
+            style="font-size: 1.7rem ;padding-right: 7px;"></i>Orders</a>
+
+
+        <div class="cart-section">
+            <a href="cartpage.html" class="signIn" id="cart-page1"><i class="fa-solid fa-cart-shopping"
+                style="font-size: 1.7rem ;padding-right: 7px;"></i>Cart</a>
+            <p class="cart-count">0</p>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+    <!-- .............................Navbar Ended Here................................................... -->
+<!-- .................................navbar-below-section........................... -->
+    <div class="navbar-below-section">
+        <p>Your Shop Consultant is <span  class="bolder-text"> SHOP.COM </span></p>
+        <p id="hide">Earn up to <span  class="bolder-text">50% <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="" class="small-img"> Cashback </span>  on eligible purchases. <span style="text-decoration: underline;" class="bolder-text"> Learn More </span></p>
+    </div>
+
+    <div class="second-navbar-below-section">
+        <p>$50,009,502</p>
+        <div>
+            <p>awarded in <img src="https://img.shop.com/Image/resources/images/cashback-icon.svg" alt="" class="small-img-two"><span class="bolder-text"> Cashback!</span></p>
+            <button class="btn2">Learn More</button>
+        </div>
+    </div>
+
+<div class="poster">
+    <img id="poster" src="https://img.shop.com/Image/homepage/shop-us-eng-99087-blkhistory-2023-banners-cta1675269969042.jpg" alt="">
+</div>
+
+<div class="main-div">
+<div class="popular-brands">
+    <p>Popular Brands</p>
+    </div>
+<div class="popular-brand-section">
+    <div class="left-side-img">
+        <img id="cloth2" src="https://img.shop.com/Image/290000/291600/291696/products/1940910044.jpg?plain&size=300x300" alt="">
+    </div>
+    
+    <div class="parent-div">
+        
+        <div class="brands-div">
+            <div>
+                <img src="https://img.shop.com/Image/homepage/nike_140x110-img.gif" alt="">
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/michaelkors_140x110-img.gif" alt="">
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/coach_brand7.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/adidaslogo_140_1100.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://img.shop.com/Image/homepage/cuisinart.gif" alt="">
+            </div>
+        </div>
+       
+        <div class="second-brands-div">
+            
+            <div>
+                <img src="https://img.shop.com/Image/homepage/us-gap-sale-hp-jan231675272930012.jpg" alt="">
+                <h3>Markdowns Up to 60% Off</h3>
+            </div>
+            <div>
+                <img  src="https://img.shop.com/Image/homepage/us-eng-crayola-vday-feb231675711424762.jpeg" alt="">
+
+                <h4>2.00% Cashback</h4>
+                <p>SALE, Extra Off Markdowns With code SALE!</p>
+                <p>Restrictions Apply.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--................................ Popular brands page ends here........................... -->
+<!-- ...............................Mid Section starts from here.............................. -->
+<div class="mid-logo">
+    <img src="https://img.shop.com/Image/resources/homepage/shop-homepage-icon.svg" alt="">
+</div>
+
+<div class="mid-section-grid-layout">
+    <div>
+        <img src="https://img.shop.com/Image/homepage/us-eng-shopbop-ny-medi-fillin-hp-jan211671032078319.jpg" alt="">
+        <h4>2.00% Cashback</h4>
+        <p>save an Extra Off select styles with code CHEERS at</p>
+        <p>Nike.com</p>
+    </div>
+    <div id="hide">
+        <img src="https://img.shop.com/Image/homepage/us-eng-jcpenney-hp-dec221675271951418.jpg" alt="">
+        <h4>2.00% Cashback</h4>
+        <p>save an Extra Off select styles with code CHEERS at</p>
+        <p>Nike.com</p>
+    </div>
+    <div>
+        <img src="https://img.shop.com/Image/homepage/us-eng-oldnavy-ny-media-fillin-jan221675183091907.jpg" alt="">
+        <h4>2.00% Cashback</h4>
+        <p>save an Extra Off select styles with code CHEERS at</p>
+        <p>Nike.com</p>
+    </div>
+</div>
+<!-- ....................................Mid-Section-End.................................. -->
+
+<!-- ...................................Luxury Beauty by Motives part.............................. -->
+<h2 class="product-category-one">Luxury Beauty by Motives</h2>
+<section class="product-one"> 
+    
+    <div class="product-one-img">
+        <img src="https://img.shop.com/Image/homepage/motives-usa-can-100110-sculpting-concealer-banners-bgsq-min1672866485179.jpg" alt="">
+    </div>
+    <!-- <img src="" alt=""> -->
+    <div class="product-container-one">
+        <div class="product-card-one">
+          
+                <img src="https://img.shop.com/Image/240000/243300/243380/products/1905765309.jpg?plain&size=600x600" class="product-thumb" alt="">
+           
+            
+                <h4 class="product-brand-one">Motives@ LALA Liquid Lipstick</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+             
+        </div>
+        <div class="product-card-one">
+
+                <img src="https://img.shop.com/Image/240000/243300/243380/products/1841776313.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+          
+                <h4 class="product-brand-one">Motives@ Lip Kit</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+
+        </div>
+        <div class="product-card-one">
+
+                <img src="https://img.shop.com/Image/240000/243300/243380/products/1942133481.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+               
+
+                <h4 class="product-brand-one">MotivesO Essential Complexion 4-Piece
+                    Brush Set</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+               
+
+        </div>
+        <div class="product-card-one">
+                <img src="https://img.shop.com/Image/240000/243300/243380/products/1487570156.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+          
+                <h4 class="product-brand-one">Motives® Fiber Lush Mascara</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+          
+        </div>
+        <div class="product-card-one">
+                <img src="https://img.shop.com/Image/240000/243300/243380/products/1942133520.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+         
+
+                <h4 class="product-brand-one">Motives@ Essential Eye 7-Piece Brush Set</h4>
+                <p class="product-short-description-one pice"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+              
+        </div>
+       
+        <div class="product-card-one">
+            <img src="https://img.shop.com/Image/240000/243300/243380/products/1942133484.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+     
+
+            <h4 class="product-brand-one">Motives@ 30th Anniversary Lip Collection</h4>
+            <p class="product-short-description-one pice"><b> $13.95 - $23.95</b></p>
+            <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+            <p class="product-short-description-one">Free shipping with $99 orders</p>
+          
+    </div>
+    </div>
+</section>
+<!-- ...................................Luxury Beauty by Motives part end here.............................. -->
+
+<!-- ................................Winter Session.................................-->
+<div class="parent-of-newyear">
+<div class="heading-of-newyear">
+    <h2>Winter Special</h2>
+</div>
+<div class="new-year-section">
+<div>
+    <img src="https://img.shop.com/Image/260000/266700/266794/products/1920611489.jpg?size=400x400" alt="">
+    <p>ACTIVEWEAR FOR HER</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/240000/243400/243406/products/1903116906.jpg?size=400x400" alt="">
+    <p>ACTIVEWEAR FOR HIM</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/260000/268500/268595/products/1899557383.jpg?size=400x400" alt="">
+    <p>ACTIVEWEAR FOR GIRLS</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/240000/243400/243406/products/1902713983.jpg?size=400x400" alt="">
+    <p>ACTIVEWEAR FOR BOYS</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/240000/243300/243395/products/1840661688.jpg?size=750x750" alt="">
+    <p>WEIGHT MANAGEMENT</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/270000/272200/272225/products/1864569386.jpg?size=400x400" alt="">
+    <p>FITNESS TRACKERS</p>
+</div>
+<!-- ...6 -->
+<div>
+    <img src="https://img.shop.com/Image/240000/243400/243406/products/1896044754.jpg?size=400x400" alt="">
+    <p>WOMEN'S FITNESS SHOES</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/260000/268500/268595/products/1863436320.jpg?size=400x400" alt="">
+    <p>MEN'S FITNESS SHOES</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/270000/274900/274929/products/1901443904.jpg?size=400x400" alt="">
+    <p>GIRLS FITNESS SHOES</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/240000/243400/243406/products/1878017998.jpg?size=400x400" alt="">
+    <p>BOYS FITNESS SHOES</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/250000/254300/254300/products/1469169385.jpg?size=400x400" alt="">
+    <p>SPORTS AND FITNESS</p>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/240000/243400/243406/products/1760367515.jpg?size=400x400" alt="">
+    <p>EXERCISE MACHINES</p>
+</div>
+
+</div>
+</div>
+
+
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3 Section needs to be complted xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!-- .........................Skin Care from Lumière de Vie Section............................ -->
+<!-- ..............xxxx(code here)xxxx........................................... -->
+<h2 class="product-category-one">Luxury Beauty by Motives</h2>
+<section class="product-one"> 
+    
+    <div class="product-container-one">
+        <div class="product-card-one">
+          
+                <img src="https://img.shop.com/Image/240000/248600/248698/products/1958498951.jpg?plain&size=600x600" class="product-thumb" alt="">
+           
+            
+                <h4 class="product-brand-one">Motives@ LALA Liquid Lipstick</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+             
+        </div>
+        <div class="product-card-one">
+
+                <img src="https://img.shop.com/Image/240000/248600/248698/products/1958498942.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+          
+                <h4 class="product-brand-one">Motives@ Lip Kit</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+
+        </div>
+        <div class="product-card-one">
+
+                <img src="https://img.shop.com/Image/270000/274000/274036/products/1956507645.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+               
+
+                <h4 class="product-brand-one">MotivesO Essential Complexion 4-Piece
+                    Brush Set</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+               
+
+        </div>
+        <div class="product-card-one">
+                <img src="https://img.shop.com/Image/240000/248600/248698/products/1849034699.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+          
+                <h4 class="product-brand-one">Motives® Fiber Lush Mascara</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+          
+        </div>
+        <div class="product-card-one">
+                <img src="https://img.shop.com/Image/240000/248600/248698/products/1766653370.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+         
+
+                <h4 class="product-brand-one">Motives@ Essential Eye 7-Piece Brush Set</h4>
+                <p class="product-short-description-one pice"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+              
+        </div>
+       
+        <div class="product-card-one">
+            <img src="https://img.shop.com/Image/270000/274000/274036/products/1827874989.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+     
+
+            <h4 class="product-brand-one">Motives@ 30th Anniversary Lip Collection</h4>
+            <p class="product-short-description-one pice"><b> $13.95 - $23.95</b></p>
+            <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+            <p class="product-short-description-one">Free shipping with $99 orders</p>
+          
+    </div>
+    
+</div>
+<div class="product-one-img-two">
+    <img src="https://img.shop.com/Image/homepage/ldv-usa-eng-106121-eye-lift-bgsq1672324332659.jpg" alt="">
+</div>
+</section>
+<!-- ..........................Skin Care from Lumière de Vie  Section end here............................... -->
+
+<!-- .........................Healthy Hair with Fixx Section............................ -->
+<!-- ..............xxxx(code here)xxxx........................................... -->
+<h2 class="product-category-one">Healthy Hair with Fixx</h2>
+<section class="product-one"> 
+    
+    <div class="product-one-img">
+        <img src="https://img.shop.com/Image/homepage/fixx-usa-eng-106883-thick-hair-banner-bgsq1672259150481.jpg" alt="">
+    </div>
+    <img src="" alt="">
+    <div class="product-container-one">
+        <div class="product-card-one">
+          
+                <img src="https://img.shop.com/Image/210000/214200/214202/products/1959550818.jpg?plain&size=600x600" class="product-thumb" alt="">
+           
+            
+                <h4 class="product-brand-one">NutriClean® HepatoCleanse (Liver Support Formula)</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+             
+        </div>
+        <div class="product-card-one">
+
+                <img src="https://img.shop.com/Image/210000/214200/214202/products/561800387.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+          
+                <h4 class="product-brand-one">Shopping Annuity Brand SNAP'" II Cleaner
+                    Disinfectant</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+
+        </div>
+        <div class="product-card-one">
+
+                <img src="https://img.shop.com/Image/210000/214200/214202/products/561800379.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+               
+
+                <h4 class="product-brand-one">IsotonixO Complete Greens</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+               
+
+        </div>
+        <div class="product-card-one">
+                <img src="https://img.shop.com/Image/210000/214200/214202/products/561800378.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+          
+                <h4 class="product-brand-one">Ultimate AloeO Gel</h4>
+                <p class="product-short-description-one"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description-one">Free shipping with $99 orders</p>
+          
+        </div>
+        <div class="product-card-one">
+                <img src="https://img.shop.com/Image/210000/214200/214202/products/561800377.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+         
+
+                <h4 class="product-brand-one">Shopping Annuity Brand SNAPT" Scouring
+                    Deep Cleanser</h4>
+                <p class="product-short-description-one pice"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+              
+        </div>
+       
+        <div class="product-card-one">
+            <img src="https://img.shop.com/Image/210000/214200/214202/products/1717581989.jpg?plain&size=600x600" class="product-thumb-one" alt="">
+     
+
+            <h4 class="product-brand-one">Shopping Annuity Brand SNAPT" Scouring
+                Deep Cleanser</h4>
+            <p class="product-short-description-one pice"><b> $13.95 - $23.95</b></p>
+            <p class="product-short-description-one">+up to $0.48 / 2.01% Cashback</p>
+            <p class="product-short-description-one">Free shipping with $99 orders</p>
+          
+    </div>
+    </div>
+</section>
+<!-- ..........................Healthy Hair with Fixx  Section end here............................... -->
+
+
+<!-- .........................Cleaning & Health Have Never Been More Important Section............................ -->
+<!-- ..............xxxx(code here)xxxx........................................... -->
+<section class="product"> 
+    <h2 class="product-category">Cleaning & Health Have Never Been More Important</h2>
+    <!-- <button class="pre-btn"><img src="arrow.png" alt=""></button> -->
+    <!-- <button class="nxt-btn"><img src="arrow.png" alt=""></button> -->
+    <div class="product-container">
+        <div class="product-card">
+          
+                <img src="https://img.shop.com/Image/240000/243300/243382/products/604981555.jpg?plain&size=600x600" class="product-thumb" alt="">
+           
+            
+                <h4 class="product-brand">NutriClean® HepatoCleanse (Liver Support Formula)</h4>
+                <p class="product-short-description"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+             
+        </div>
+        <div class="product-card">
+
+                <img src="https://img.shop.com/Image/240000/243300/243390/products/1954251853.jpg?plain&size=600x600" class="product-thumb" alt="">
+          
+                <h4 class="product-brand">Shopping Annuity Brand SNAP'" II Cleaner
+                    Disinfectant</h4>
+                <p class="product-short-description"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+
+        </div>
+        <div class="product-card">
+
+                <img src="https://img.shop.com/Image/210000/214100/214196/products/604981551.jpg?plain&size=600x600" class="product-thumb" alt="">
+               
+
+                <h4 class="product-brand">IsotonixO Complete Greens</h4>
+                <p class="product-short-description"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+               
+
+        </div>
+        <div class="product-card">
+                <img src="https://img.shop.com/Image/210000/214100/214196/products/1570985385.jpg?plain&size=600x600" class="product-thumb" alt="">
+          
+                <h4 class="product-brand">Ultimate AloeO Gel</h4>
+                <p class="product-short-description"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+          
+        </div>
+        <div class="product-card">
+                <img src="https://img.shop.com/Image/240000/243300/243392/products/867821034.jpg?plain&size=600x600" class="product-thumb" alt="">
+         
+
+                <h4 class="product-brand">Shopping Annuity Brand SNAPT" Scouring
+                    Deep Cleanser</h4>
+                <p class="product-short-description pice"><b> $13.95 - $23.95</b></p>
+                <p class="product-short-description">+up to $0.48 / 2.01% Cashback</p>
+                <p class="product-short-description">Free shipping with $99 orders</p>
+              
+        </div>
+       
+        <div class="product-card">
+            <img src="https://img.shop.com/Image/210000/214100/214196/products/561800345.jpg?plain&size=600x600" class="product-thumb" alt="">
+     
+
+            <h4 class="product-brand">Shopping Annuity Brand SNAPT" Scouring
+                Deep Cleanser</h4>
+            <p class="product-short-description pice"><b> $13.95 - $23.95</b></p>
+            <p class="product-short-description">+up to $0.48 / 2.01% Cashback</p>
+            <p class="product-short-description">Free shipping with $99 orders</p>
+          
+    </div>
+    </div>
+</section>
+<!-- ..........................Cleaning & Health Have Never Been More Important Section end here............................... -->
+<!---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3 Section needs to be complted xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!--....................................Our Brands Section....................... -->
+<div class="brand-section">
+    <h2>Our Brands</h2>
+    <div class="brand-section-cards">
+        <div>
+            <h4>HEALTH & NUTRITION</h4>
+            <img src="https://img.shop.com/Image/homepage/healthnutirtion1572880380738.jpg" alt="">
+        </div>
+        <div>
+            <h4>BEAUTY</h4>
+            <img src="https://img.shop.com/Image/homepage/lipstick1572880828301.jpg" alt="">
+        </div>
+        <div>
+            <h4>HOME & CLEANING</h4>
+            <img src="https://img.shop.com/Image/homepage/home_ma1572880950379.jpg" alt="">
+        </div>
+        <div>
+            <h4>BABY & KIDS</h4>
+            <img src="https://img.shop.com/Image/homepage/baby-kids1572881179463.jpg" alt="">
+        </div>
+        <div>
+            <h4>JEWELRY</h4>
+            <img src="https://img.shop.com/Image/homepage/1840336563__225x225-img__.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="white-space-div"><p>arrg</p></div>
+<!--....................................Our Brands Section End here....................... -->
+
+
+<!-- ..............................Scroll to top part ....................................... -->
+<button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="data:image/jpeg;base64,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"></img></button>
+
+
+
+
+<!-- ................................Footer Section Start.............................. -->
+<div class="footer-section">
+
+ <div class="first-div">
+    <div>
+        <label for="fname">Get Email Deals & Earn Cashback</label>
+        <input type="email" id="fname" name="fname" class="emailbox" placeholder="enter email address...">
+        <button id="sign-up">Sign Up</button>
+    </div>
+    <div>
+        <span>Link To This Page & Tell All Your Friends!</span>
+        <button>
+            Copy Link
+        </button>
+     </div>
+ </div>
+
+
+
+<div class="second-div">
+<div>
+    <a href="#">About Us</a >
+    <a href="#">Help</a >
+    <a href="#">Accessibility Statement</a >
+    <a href="#">Contact Us</a >
+    <a href="#">Partner With US</a >
+    <a href="#">Services</a >
+    <a href="#">Country/region</a >
+    <a href="#">Connect</a >
+    <a href="#">Own Your Own SHOP Site</a >
+</div>
+<div class="footer-logos">
+    <!-- <img src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" alt=""> -->
+    <!-- <img src="https://www.nopcommerce.com/images/thumbs/0015920_facebook-authentication.png" alt=""> -->
+    <!-- <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt=""> -->
+</div>
+</div>
+
+<div class="footer-copyright-section">
+    <p> 1997-2023 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners.</p>
+    <p> Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.</p>
+     <a href="#" class="links">Privacy Policy</a>
+     <a href="#" class="links">Terms of Use</a>
+     <a href="#" class="links">Advertising Disclosure</a>
+     <a href="#" class="links">Shipping Information</a>
+     <a href="#" class="links">Do Not Sell My Information</a>
+</div>
+
+<div class="footer-img-section">
+    <img src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png" alt="">
+    <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_10_top_500_primary_merch_category.png" alt="">
+    <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png" alt="">
+    <img src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png" alt="">
+    <img src="https://img.shop.com/Image/images/ir/Shop-ranks-13-in-NC-circle.png" alt="">
+    <img src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png" alt="">
+    <img src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png" alt="">
+    <img src="https://www.shop.com/feo-cdn/_/N/37zALkhvc.webp" alt="">
+</div>
+</div>
+</body>
+</html>
+
+<script src="index.js"></script>
+<!-- <script src="scroll.js"></script> -->

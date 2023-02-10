@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+    <title>Address</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Roboto,Arial,Helvetica,sans-serif;
+        }
+        #navbar{
+            display: flex;
+            background: #f0f1f7;
+            -webkit-box-shadow: 0 0 8px #202340;
+            box-shadow: 0 0 8px #202340;
+            padding: 5px 10px;
+            /* position: fixed; */
+            /* position:absolute; */
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            justify-content: space-between;
+            padding-top: 7.5px;
+            margin-bottom: 50px;
+        }
+        #navbar>img{
+            width: 200px;
+        }
+        /* #navbar>img:hover{
+            border: 1px dashed black;
+            position: relative
+        } */
+        #navbar>a{
+            margin-right: 30px;
+            margin-top: 4px;
+            color: black;
+            font-weight: bolder;
+            color: #202340;
+            font-family: Roboto,Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: bold;
+        }
+        #navbar>a:hover{
+           color:#00a8ca ;
+           text-decoration: none;
+        }
+        /* MID SECTION  */
+        #mid{
+            margin: auto;
+        }
+        #body{
+            display: flex;
+            flex-direction: column;
+            margin-top: 70px;
+            padding: 10px;
+            margin: auto;
+            /* border: 2px solid #202340; */
+            justify-content: space-evenly;
+            width: 1000px;
+
+        }
+        #heading_ship{
+            color:#202340;
+            font-family: 'Roboto','Arial';
+            margin-left:10px;
+            /* margin-top: 10px; */
+            padding-top: 15px;
+            margin-bottom: 10px;
+        }
+        #fiels{
+            font-size: 14px;
+            font-family: 'Roboto','Arial';
+            color:#545871;
+            margin-left: 5px;
+            margin-bottom: 10px;
+
+        }
+        #form{
+            display: grid;
+            grid-template-columns: repeat(2,45%);
+            justify-content: space-between;
+            /* border: 1px solid red; */
+        }
+        .label{
+            /* font-size: .875rem; */
+            display: block;
+            margin-left: 10px;
+            font-size: 20px;
+            
+        }
+        #form input{
+            font-size: 20px;
+            padding: 8px;
+            margin-top: 8px;
+            font-style: italic;
+            width: 95%;
+            margin-bottom: 25px;
+        }
+        select{
+             font-size: 18px;
+            padding: 8px;
+            margin-top: 8px;
+            font-style: italic;
+             width: 95%;
+            margin-bottom: 25px;
+            /* font-weight: bolder;  */
+
+        }
+        #_box{
+            display: flex;
+            margin-left: 10px;
+            padding: 5px;
+        }
+        #phone{
+            font-size: 20px;
+            margin-top: 20px;
+            
+        }
+        #phone input{
+            width: 30%;
+            font-size: 18px;
+            padding: 8px;
+        }
+        #box2{
+            display: flex;
+            margin-left: 10px;
+        }
+        #box2 label{
+            font-size: 18px;
+        }
+        #checkbox1{
+            position: relative;
+            cursor: pointer;
+        }
+         #checkbox1{
+            width: 20px;
+        }
+        #phone123{
+            display: flex;
+            /* justify-content: space-between; */
+            margin-top: 7px;
+        }
+        #cancel{
+        color:#202340 ;
+        /* height: 40px; */
+        padding: 10px;
+        border-radius: 20px;
+        }
+        #save{
+            
+         border-radius: 20px;
+         background-color: #202340;
+         color: white;
+         margin-left: 100px;
+         padding: 7px;
+         width: 250px;
+         font-size: large;
+         }
+         #phone{
+            font-size: 20px;
+            padding: 8px;
+            margin-top: 8px;
+            font-style: italic;
+            width: 95%;
+            margin-bottom: 25px;
+         }
+    </style>
+</head>
+<body>
+    <!-- TOP SECTION  -->
+    <div id="navbar">
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
+        <a href="./project.html" onclick="fun1()">Continue Shopping</a>
+    </div>
+    <!-- MID SECTION  -->
+    <div id="mid">
+        <div id="body">
+            <h1 id="heading_ship">Shipping Address Form</h1>
+            <p id="fiels">* Indicates required field</p>
+            <div id="form">
+                <div class="label">
+                    <label>First name*<br>
+                        <input id="first_name" type="text" placeholder="First name here">
+                    </label>
+                </div>
+                <div class="label">
+                    <label>Last name*<br>
+                        <input id="last_name" type="text" placeholder="Last name here">
+                    </label>
+                </div>
+                <div class="label">
+                    <label>Address 1* <br>
+                        <input id="address" type="text" placeholder="Please enter street address here">
+                    </label>
+                </div>
+                <div class="label">
+                    <label>Address 2<br>
+                        <input type="text" placeholder="Enter the Building">
+                    </label>
+                </div>
+                <div class="label">
+                    <label>City*<br>
+                        <input id="city" type="text" placeholder="City here">
+                    </label>
+                </div>
+                <div class="label">
+                    <label>State/Province*<br>
+                        <select id="state">
+                            <option value="">Select the State</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Andra Pradesh">Andra Pradesh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Assam">Assam</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Sikkim">Sikkim</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="label">
+                    <label>Zip/Postal*<br>
+                        <input id="zip" type="text" placeholder="zip code">
+                    </label>
+                </div>
+            </div>
+            <div id="box2">
+                <input type="checkbox" id="checkbox1"> <label id="_box" for="checkbox1" style="margin-left: 0;"> This address is a PO Box
+                    <!-- <span >This address is a PO Box</span> -->
+                </label>
+            </div>
+            <div id="phone">
+                <label>Phone*<br>
+                    <input type="text" id="phone_number" placeholder="Please enter your 10 digit phone number">
+                </label>
+            </div>
+            <div id="phone123">
+                <button style="cursor:pointer;" id="cancel">Cancel</button>
+                <button style="cursor:pointer;" id="save">Save</button>
+            </div>
+    </div>
+    </body>
+    </html>
+    <script>
+        document.getElementById("save").addEventListener("click",addressfill)
+        function addressfill(){
+            event.preventDefault()
+            console.log("click")
+            var obj={
+                firstname1:document.getElementById("first_name").value,
+                lastname1:document.getElementById("last_name").value,
+                address1:document.getElementById("address").value,
+                city1:document.getElementById("city").value,
+                state1:document.getElementById("state").value,
+                zip1:document.getElementById("zip").value,
+                phone1:document.getElementById("phone_number").value
+            }
+            localStorage.setItem("address-form",JSON.stringify(obj))
+            window.open("./address.html","_self")
+        }
+        function fun1(){
+        window.open("../project.html","_self")
+        }
+    </script>

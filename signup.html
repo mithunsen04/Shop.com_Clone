@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account</title>
+    <link rel="stylesheet" href="signup.css">
+    
+    <link rel="icon" type="image/x-icon" href="">  
+</head>
+<body>
+    <header>
+   
+    <!--Navbar section will be here -->
+
+    </header>
+    
+<main>
+    <section>
+        <div id="box" >                    
+                    <h1>Create an account</h1>
+            <form action="" id="signupform"> 
+                <p>* Indicates required field</p>
+                <div id="details">                  
+                    
+                    <div>
+                        <div>
+                            <label for="fname">First Name*</label><br>
+                            <input type="text" id="fname" name="fname" class="account" placeholder="First name here" required/>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name*</label><br>                    
+                            <input type="text" id="lname" name="lname" class="account" placeholder="Last name here" required/>
+                        </div> 
+                    </div>
+                        <div> <label for="email">Email Address*</label><br>
+                            <input type="email" id="email" name="email" class="account" placeholder="yourname@example.com" required/>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">Password (At least 7 characters)</label> <br> 
+                            <input type="password" id="password" name="password" class="account" placeholder="Please enter aminimum of 7 characters" required/>
+        
+                        </div>
+                        <div>
+                            <label for="password">Confirm Password*</label><br>    
+                            <input type="password" id="confpassword" name="confpassword" class="account" placeholder="Please reenter your password" required/>
+                        </div>
+                    </div>
+                </div> 
+                   <!-- details id div ended  -->
+                    <h2>Text Message (SMS) Alerts: (Optional)</h2>
+                <div>
+                    <input type="checkbox" id="messagealert" name="messagealert" class="squarebox" />
+                    <label for="messagealert">Do you want to sign up for Shopper alerts from SHOP.COM? (Message and data rates may apply.)</label>
+                    
+                </div>
+                <div> 
+                    <label for="mobnumber">Enter a Mobile Number</label><br>
+                    <input type="text" id="mobnumber" name="mobnumber" class="account" minlength="10" maxlength="10" placeholder="Please enter your 10 digit phone number(i.e 999 999 9999)" required/>
+                </div>
+            
+                <div>  
+                    <label for="email1">Were you referred by a friend? <br><span>Enter their email address (Optional)</span></label><br>
+                    <input type="email" id="email1" name="email1" class="account" />
+                </div> 
+                    <p> Your Shop Consultant is SHOP.COM</p>
+                <!-- </div>      -->
+                   
+                <div id="deals">  
+                    <h2>Email deals: (Optional)</h2>
+                    <div>
+                        <input type="checkbox" id="notification" name="notification"  class="squarebox"> 
+                        <label for="notification">Do you want to sign up for sweet email offers and discounts from SHOP.COM?</label>
+                    </div>
+                   <div>
+                     <input type="checkbox" id="notification1" name="notification1" class="squarebox">
+                     <label for="notification1">Do you want to sign up for sweet email offers and discounts from MarketAmerica.com and its brands?</label>
+                    </div>
+                    </div>  
+
+                   
+
+                <div id="end">  
+                    <input type="submit" value="Create your new account" style="cursor: pointer;">
+                     <p>By creating an account, you are agreeing to our Terms of Service and Privacy Policy.</p>
+                </div>
+
+            </form>
+            </div>
+        </div>   
+    </section>
+</main>
+ 
+<!--footer-->
+    
+</body>
+</html>
+<script src="./signup.js"></script>

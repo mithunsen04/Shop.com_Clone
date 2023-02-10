@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn Page</title>
+    <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script> 
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+    <link rel="stylesheet" href="forgotpass.css" />
+  </head>
+  <body>
+    <header>
+<!-- .................................NAvBAr Started Here........................................... -->
+<!-- .................................NAvBAr Started Here........................................... -->
+<div class="top-section">
+  <p>1st time customers save 25% on SHOP.COM exclusive brands using code FIRST250FF. Max $25 discount. Terms Apply. <span style="text-decoration: underline;">Click Here</span> </p>
+</div>
+<!-- ...................................Whole NavBar Section...................... -->
+<div class="navbar">
+
+  <div class="nav-first-section">
+<!-- ............................logo-div(1st-part-of-navbar)......................................................... -->
+<div class="logo" style="flex:1 ; width:30%">
+  <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="" style="flex:1 ; width:40%">
+</div>
+
+<!-- ............................Input-section-div(1st-part-of-navbar)......................................................... -->
+<div class="input-section" style="flex:2 ">
+<form action="" id="form1" style="display: flex;">
+<select id="NamesSorting">
+  <option value="empty">All Departments</option>
+  <option value="Auto">Auto</option>
+  <option value="Beauty">Beauty</option>
+  <option value="Books">Books</option>
+  <option value="Business">Business</option>
+  <option value="Cameras">Cameras</option>
+  <option value="Clothes">Clothes</option>
+  </select>
+  <div style="display: flex; width: 100%; border-left:1px solid black;">
+  <input type="text" placeholder="Search SHOP.COM..." class="nav-bar-input">
+  <button class="btn1">
+      <i class="fa fa-search" aria-hidden="true" style="color:white"></i>
+  </button>
+</div>
+</form>
+</div>
+<!-- ............................LayeredSale div img section(1st-part-of-navbar)......................................................... -->
+
+<div class="second-logo" style="flex:1 ">
+  <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-banner-300x50-11670940062489.jpg" alt="">
+</div>
+
+</div>  
+<!-- ................................1st part of navbar ended here -->
+
+<!-- ................................2ndst part of navbar started from here............................ -->
+<div class="nav-second-section">
+
+  <div id="navigation">
+
+<div id="menu" onclick="onClickMenu()">
+  <div id="bar1" class="bar"></div>
+  <div id="bar2" class="bar"></div>
+  <div id="bar3" class="bar"></div>
+</div>
+
+<ul class="nav" id="nav">
+  <h4>Categories</h4>
+  <li><a href="#">Onecart Exclusive Deals</a></li>
+  <li><a href="#">Clothes</a></li>
+  <li><a href="#">Shoes</a></li>
+  <li><a href="#">Beauty</a></li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Electronics</a></li>
+  <li><a href="#">Health & Nutrition</a></li>
+  <li><a href="#">Jewelry</a></li>
+  <li><a href="#">Kids</a></li>
+  <li><a href="#">Pet Supplies</a></li>
+  <li><a href="#">Food & Drink</a></li>
+  <li><a href="#">Sports</a></li>
+  <li><a href="#">Travel</a></li>
+</ul>
+</div>
+
+<div class="child">
+  <a href="">Exclusive Brands</a>
+  <a href="">Stores</a>
+  <a href="">Deals</a>
+  <a href="">SHOP Travel</a>
+  <a href="">Departments</a>
+  <a href="">ShopBuddy</a>
+  <a href="">SHOP Local</a>
+</div>
+
+<div class="child-second-section">
+
+  <a href="#" class="signIn"><i class="fa-solid fa-circle-user " style="font-size: 1.7rem ;padding-right: 7px;"></i> <span id = "user-name">Sign In </span> </a>
+
+
+  <a href="#" class="signIn"><i class="fa-solid fa-rotate-left" style="font-size: 1.7rem ;padding-right: 7px;" ></i>Orders</a>
+
+  <div class="cart-section">
+  <a href="#" class="signIn"><i class="fa-solid fa-cart-shopping" style="font-size: 1.7rem ;padding-right: 7px;" ></i>Cart</a>
+  <p class="cart-count">0</p>
+</div>
+</div>
+</div>
+</div>
+  
+
+    </header>
+
+    <!-- ............................Main Section Started......................................................... -->
+    <!-- ............................Main Section Started......................................................... -->
+    <!-- ............................Main Section Started......................................................... -->
+
+    <main>
+      <section>
+        <div >
+          <h1 id="forgoth1">Forgot your password?</h1>
+          <p id="forgotp">Don't worry. We'll have you back and running in 2 easy steps.</p>
+          <h2 id="forgoth2">Step 1</h2>
+          <p>* Indicates required field</p>
+
+          <div id="otp">
+            <div>
+                <label id="forgotl1"for="email">Email address:</label><br />
+                <input
+                  type="email" id="email" name="email"
+                  placeholder="yourname@example.com"/><br />
+                  <button id="forotp" onclick="getotp"> Click here to Get OTP</button>
+                </div>
+                <label id="forgotl2" for="otp1"></label>
+                <div id="enterotp">
+                    <input
+                  type="text" id="otp1" name="otp1"
+                  placeholder="Please Enter Valid OTP"/><br />
+                  <button id="submite"> Submit</button>
+                  <button id="updatePass"> Submit</button>
+                </div>
+                </div>
+                
+        </div>
+      </section>
+    </main>
+        <!-- ............................Main Section Ended......................................................... -->
+    <!-- ............................Main Section Ended......................................................... -->
+    <!-- ............................Main Section Ended......................................................... -->
+
+
+
+    <footer>
+      <div class="footer-section">
+        <div class="first-div">
+          <div>
+            <label for="fname">Get Email Deals & Earn Cashback</label>
+            <input
+              type="email"
+              id="fname"
+              name="fname"
+              class="emailbox"
+              placeholder="enter email address..."
+            />
+          </div>
+          <div>
+            <span>Link To This Page & Tell All Your Friends!</span>
+            <button>Copy Link</button>
+          </div>
+        </div>
+
+        <div class="second-div">
+          <div>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Partner With US</a>
+            <a href="#">Services</a>
+            <a href="#">Country/region</a>
+            <a href="#">Connect</a>
+            <a href="#">Own Your Own SHOP Site</a>
+          </div>
+          <div class="footer-logos">
+            <img src="mail.png" alt="" />
+            <img src="facebook-app-symbol.png" alt="" />
+            <img src="twitter.png" alt="" />
+            <img src="pinterest.png" alt="" />
+          </div>
+        </div>
+
+        <div class="footer-copyright-section">
+          <p>
+            1997-2023 Market America, Inc. or its affiliates. All other
+            designated trademarks, copyrights, and brands are the property of
+            their respective owners.
+          </p>
+          <p>
+            Only Customers will receive cashback on qualifying purchases.
+            UnFranchise Owners/Shop Consultants will receive increased IBV
+            instead of cashback on qualifying purchases.
+          </p>
+          <a href="#" class="links">Privacy Policy</a>
+          <a href="#" class="links">Terms of Use</a>
+          <a href="#" class="links">Advertising Disclosure</a>
+          <a href="#" class="links">Shipping Information</a>
+          <a href="#" class="links">Do Not Sell My Information</a>
+        </div>
+
+        <div class="footer-img-section">
+          <img
+            src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/images/ir/DC360_2022_rank_10_top_500_primary_merch_category.png"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/images/ir/Shop-ranks-13-in-NC-circle.png"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/images/ir/commonwealth_2022_rank_22_top_2000_tw_english.png"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png"
+            alt=""
+          />
+          <img src="https://www.shop.com/feo-cdn/_/N/37zALkhvc.webp" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="./forgotpass.js"></script>

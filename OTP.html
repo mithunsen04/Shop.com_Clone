@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+    <style>
+        /* Global */
+*{
+    box-sizing: border-box;
+}
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Roboto,Arial,Helvetica,sans-serif;
+        }
+        #navbar{
+            display: flex;
+            background: #f0f1f7;
+            -webkit-box-shadow: 0 0 8px #202340;
+            box-shadow: 0 0 8px #202340;
+            padding: 5px 10px;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            justify-content: space-between;
+            padding-top: 7.5px;
+            margin-bottom: 50px;
+        }
+        #navbar>img{
+            width: 200px;
+        }
+        #navbar>a{
+            margin-right: 30px;
+            margin-top: 4px;
+            color: black;
+            font-weight: bolder;
+            color: #202340;
+            font-family: Roboto,Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: bold;
+        }
+        #navbar>a:hover{
+           color:#00a8ca ;
+           text-decoration: none;
+        }
+ 
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+}
+ 
+body {
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 0;
+    background-color: #e7e7e7;
+}
+.credit-card {
+    width: 360px;
+    height: 220px;
+    margin: 60px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+}
+.form-header {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #e1e8ee;
+}
+ 
+.form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+}
+.title {
+    font-size: 28px;
+    margin: 0;
+    /* color: #5e6977; */
+}
+.card-number,.card-name,
+.cvv-input input,
+.month select,
+.year select {
+    font-size: 14px;
+    /* font-weight: 10; */
+    line-height: 14px;
+    border: 2px solid black;
+}
+ 
+.card-number,.card-name,
+.month select,
+.year select {
+    font-size: 14px;
+    /* font-weight: 100; */
+    line-height: 14px;
+}
+ 
+.card-number,.card-name,
+.cvv-details,
+.cvv-input input,
+.month select,
+.year select {
+    opacity: .7;
+    /* color: #86939e; */
+    padding: 8px;
+}
+.card-number,.card-name {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    padding-left: 20px;
+    border: 2px solid black;
+    /* border-radius: 6px; */
+}
+.month select,
+.year select {
+    width: 145px;
+    padding: 8px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid black;
+    /* border-radius: 6px; */
+    /* background: url('caret.png') no-repeat; */
+    background-position: 85% 50%;
+    /* -moz-appearance: none;
+    -webkit-appearance: none; */
+}
+.month select {
+    float: left;
+}
+.year select {
+    float: right;
+}
+/* Buttons Section */
+.paypal-btn,
+.proceed-btn {
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-color: transparent;
+}
+ 
+.proceed-btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: #545871;
+    padding: 8px;
+    border-radius: 10px;
+}
+ 
+.paypal-btn a,
+.proceed-btn a {
+    text-decoration: none;
+}
+ 
+.proceed-btn a {
+    color: #fff;
+}
+ 
+.paypal-btn a {
+    color: rgba(242, 242, 242, .7);
+}
+ 
+.paypal-btn {
+    padding-right: 95px;
+    background: url('paypal-logo.svg') no-repeat 65% 56% #009cde;
+}
+.proceed-btn:hover{
+    background-color:#6b6e85 ;
+}
+      /* footer  */
+        /* cart footer */
+        #cart-footer{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: #f0f1f7;
+            border-top: 2px solid #bfc1cd;
+            position: absolute;
+            left: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 100px;
+        }
+        #cart-footer p{
+            font-size: 12px;
+        }
+        #cart-footer a{
+            text-decoration: none;
+            color: inherit;
+        }
+        #cart-footer div:last-child{
+            text-align: end;
+        }
+        #cart-footer img{
+            width: 25%;
+        }
+        #cart-footer p:last-child:hover{
+            color: #00a8ca;
+            cursor: pointer;
+        }
+        #left3{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #left3 input{
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- TOP SECTION  -->
+    <div id="navbar">
+        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
+        <a href="./project.html" onclick="fun1()">Continue Shopping</a>
+    </div>
+    <!-- MIDDLE SECTON  -->
+    <!-- <h1 style="text-align: center;font-style: italic;font-size: xx-large;font-family: cursive;">TOTAL PRICE ₹0</h1> -->
+    <form class="credit-card">
+        <div class="form-header">
+          <h4 class="title" style="text-align: center;">OTP</h4>
+        </div>
+        <div class="form-body">
+          <input type="text" class="card-name" placeholder="ENTER FOUR DIGIT OTP">
+          <button type="submit" class="proceed-btn"><a href="OTP.html" target="_blank">Proceed</a></button>
+        </div>
+      </form>
+      <!-- footer  -->
+          <div id="cart-footer" style="bottom: 0;">
+        <div class="dis">
+            <p>© 1997-2023 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and
+                brands are the property of their respective owners. (famos-p11)</p>
+            <p>Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy | Shipping Information</p>
+        </div>
+        <div>
+            <a href="">
+                <img src="https://www.aiowork.com/wp-content/uploads/2021/06/digicert-ssl-certificate.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector(".proceed-btn").addEventListener("click",Payment)
+    function Payment(){
+        event.preventDefault();
+        var name = document.querySelector(".card-name").value;
+        if(name=="1234"){
+         window.open("./Continue shopping.html" , "_self")
+        }else{
+            alert("Enter correct Card Information")
+        }  
+    }
+    function fun1(){
+        window.open("../project.html","_self")
+    }
+   
+
+</script>

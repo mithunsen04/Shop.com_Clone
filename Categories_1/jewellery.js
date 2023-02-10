@@ -197,7 +197,7 @@ const showDetails = (index)=>{
        })
 
     localStorage.setItem('detail',JSON.stringify(arr));
-    window.location.href = 'details.html'}
+    window.location.href = '../details.html'}
 
 // filter best match 
 function handlePriceSort(){ 

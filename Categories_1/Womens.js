@@ -248,7 +248,7 @@ var womensData = [
        })
 
     localStorage.setItem('detail',JSON.stringify(arr));
-    window.location.href = 'details.html'}
+    window.location.href = '../details.html'}
   
   function handlePriceSort(){ 
     console.log("hii");

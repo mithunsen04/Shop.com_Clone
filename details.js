@@ -108,7 +108,7 @@ function displaydetails(){
             cart(elem);
         });
         document.querySelector("#image").append(im);
-        document.querySelector("#dt").append(na,sb,rv,save,cbp,hr1,line,hr2,line2,box);
+        document.querySelector("#dt").append(na,save,cbp,hr1,line,hr2,line2,box);
 
     });
 }

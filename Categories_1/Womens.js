@@ -103,20 +103,20 @@ var womensData = [
   category:"Dresses",
   off:"+ $2.37 / 3% Cashback",
   },
-  {
-    id:10,
-  quantity:1,
-  image_url:"https://img.shop.com/Image/270000/278100/278132/products/1958170535.jpg?plain&size=400x400",
+//   {
+//     id:10,
+//   quantity:1,
+//   image_url:"https://img.shop.com/Image/270000/278100/278132/products/1958170535.jpg?plain&size=400x400",
  
-  name: "MORGAN & CO WOMENS BLUE PLEATED GLITTER SLEEVE DRESS",
- logo_cart: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
-  merchant:"Sold by BOBBI + BRICKA",
+//   name: "MORGAN & CO WOMENS BLUE PLEATED GLITTER SLEEVE DRESS",
+//  logo_cart: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+//   merchant:"Sold by BOBBI + BRICKA",
 
-  strikedoffprice: "$169.00 " ,
-  price:  "62" ,
-  category:"Dresses",
-  off:"+  $1.89 / 3% Cashback",
-  },
+//   strikedoffprice: "$169.00 " ,
+//   price:  "62" ,
+//   category:"Dresses",
+//   off:"+  $1.89 / 3% Cashback",
+//   },
 
   
   

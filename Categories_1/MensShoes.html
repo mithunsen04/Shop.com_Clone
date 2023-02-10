@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens shoes</title>
+     <link rel="stylesheet" href="WomensClothsJeans.css">
+     <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/d042af9a63.js" crossorigin="anonymous"></script>
+     <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+ 
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+        <!-- navbar -->
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<div class="top-section">
+  <p>1st time customers save 25% on SHOP.COM exclusive brands using code FIRST250FF. Max $25 discount. Terms
+      Apply. <span style="text-decoration: underline;">Click Here</span> </p>
+</div>
+<!-- ...................................Whole NavBar Section...................... -->
+<div class="navbar">
+
+  <div class="nav-first-section">
+      <!-- ............................logo-div(1st-part-of-navbar)......................................................... -->
+      <div class="logo">
+          <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="">
+      </div>
+
+      <!-- ............................Input-section-div(1st-part-of-navbar)......................................................... -->
+      <div class="input-section">
+          <form action="" id="form">
+              <select id="NamesSorting">
+                  <option value="empty">All Departments</option>
+                  <option value="Auto">Auto</option>
+                  <option value="Beauty">Beauty</option>
+                  <option value="Books">Books</option>
+                  <option value="Business">Business</option>
+                  <option value="Cameras">Cameras</option>
+                  <option value="Clothes">Clothes</option>
+              </select>
+              <input id="search" type="text" placeholder="Search SHOP.COM...">
+              <i id="mic"class="fa-solid fa-microphone"></i>
+              <button class="btn1">
+                  <i class="fa fa-search" aria-hidden="true" style="color:white"></i>
+              </button>
+          </form>
+      </div>
+      <!-- ............................LayeredSale div img section(1st-part-of-navbar)......................................................... -->
+
+      <div class="second-logo">
+          <img src="https://img.shop.com/Image/header2013/shop-US-CA-AU-ENG-97613-valentines-day-2022-banners-300x501673460827095.png"
+              alt="">
+      </div>
+
+  </div>
+  <!-- ................................1st part of navbar ended here -->
+
+  <!-- ................................2ndst part of navbar started from here............................ -->
+  <div class="nav-second-section">
+
+      <div id="navigation">
+          <!-- <div class="humbergar-div"  id="menu" onclick="onClickMenu()">
+  <a href="#" class="humbergar-icon"><i class="fa-solid fa-bars" style="font-size: 1.7rem ; width: 35px; " ></i>Category</a>
+</div> -->
+          <div id="menu" onclick="onClickMenu()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+          </div>
+
+          <ul class="nav" id="nav">
+              <h4>Categories</h4>
+              <li><a href="#">Onecart Exclusive Deals</a></li>
+              <li><a href="clothe.html">Cloths</a></li>
+              <li><a href="shoes.html">Shoes</a></li>
+              <li><a href="beauty.html">Beauty</a></li>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="electronic.html">Electronics</a></li>
+              <li><a href="health.html">Healths & Nutrition</a></li>
+              <li><a href="jwellery.html">jewelry</a></li>
+              <li><a href="kids.html">Kids</a></li>
+              <li><a href="pet.html">Pet Supplies</a></li>
+              <li><a href="Food.html">Food & Drink</a></li>
+              <li><a href="sports.html">Sports</a></li>
+              <li><a href="#">Travel</a></li>
+          </ul>
+      </div>
+
+      <div class="child">
+          <a href="exclusive.html">Exclusive Brands</a>
+          <a href="clothe.html">Stores</a>
+          <a href="beauty.html">Deals</a>
+          <a href="">SHOP Travel</a>
+          <a href="">Departments</a>
+          <a href="">ShopBuddy</a>
+          <a href="shoplocal.html">SHOP Local</a>
+      </div>
+
+      <div class="child-second-section">
+
+          <a href="./signinPage/signin.html" class="signIn" id="signin-page1"><i class="fa-solid fa-circle-user "
+              style="font-size: 1.7rem ;padding-right: 7px;"></i> <span id="user-name">Sign In </span> </a>
+
+
+          <a href="./orderpage/orderpage.html" class="signIn" id="order-page1"><i class="fa-solid fa-rotate-left"
+              style="font-size: 1.7rem ;padding-right: 7px;"></i>Orders</a>
+
+
+          <div class="cart-section">
+              <a href="./cartpage/cartpage.html" class="signIn" id="cart-page1"><i class="fa-solid fa-cart-shopping"
+                  style="font-size: 1.7rem ;padding-right: 7px;"></i>Cart</a>
+              <p class="cart-count">0</p>
+          </div>
+      </div>
+  </div>
+</div>  
+
+    <div id="upperwalaDiv"><span>Sort: </span>
+        <select id="filterBestMatch" onchange="handlePriceSort()" >
+            <option value="none" style="font-size:medium;">Best Match</option>
+            <option value="Best-Match" style="font-size: medium;">Best Match</option>
+            <option value="Price-High-Low" style="font-size: medium;">Price High-Low</option>
+            <option value="Price-Low-High" style="font-size: medium;">Price Low-High</option>
+            <option value="Most Cashback" style="font-size: medium;">Most Cashback</option>
+           
+          </select>
+
+    </div>
+    <div id="main">
+       <div id="pahlaDiv">
+        <input type="checkbox" id="OneCart">
+          <span id="cart_upper"><img src="https://img.shop.com/Image/resources/images/onecart-icon.svg" ></span>
+          <span id="realOneCart">One Cart</span>
+          <hr>
+
+          <input type="checkbox" id="OneCart">
+          <span id="cart_upper"></span>
+          <span id="realOneCart2">Sale items (22,152)</span>
+          <br>
+
+          <input type="checkbox" id="OneCart">
+          <span id="cart_upper"></span>
+          <span id="realOneCart2">Shipping Offers </span>
+          <hr>
+
+
+<!-- dd -->
+        <div class="dropdown2">
+          <button onclick="myFunction()" class="dropbtn">Cloths</button>
+          <div id="myDropdown2" class="dropdown-content">
+            <a href="MensShirts.html">Mens</a>
+            <a href="womenCloths.html">Womens</a>
+            <a href="Kids.html">Kids </a>
+          </div>
+        </div>
+
+        <h2 id="H2">Features</h2>
+        <div id="features">
+        <div><a href="MakeUp.html" class="features" style="text-decoration:none">Makeup</a></div>
+        <div><a href="womenCloths.html" class="features" style="text-decoration:none">Dresses</a></div>
+        <div><a href="WomensClothsJeans.html" class="features" style="text-decoration:none">Jeans</a></div>
+        <div><a href="womeTop.html" class="features" style="text-decoration:none">Tops</a></div>
+        <!-- <a href="womenCloths.html" class="features">MakeUp</a> -->
+        </div>
+
+        <h2 id="H2">Home</h2>
+        <h2 id="H2">Footwears</h2>
+        <h2 id="H2">pet Supplies</h2>
+        <h2 id="H2">Beauty</h2>
+        <h2 id="H2">Electronics</h2>
+        <h2 id="H2">Food & Drinks</h2>
+     
+        <div id="feedbackid">
+            <p>Tell us how we are doing
+
+                We constantly strive to improve the customer experience
+                 and we value your feedback.
+            </p>
+            <input value="" class="feedback" placeholder="Enter feedback here!" >
+
+            <button onclick="feedbackgiven()" id="feedback_btn_id">Submit feedback</button>
+          <h3>Thanks!</h3>
+          <p>Your feedback is appreciated and reviewed by our team.</p>
+        </div>
+       </div>
+
+
+        <div id="dusraDiv"></div>
+   
+    </div>
+   
+   
+</body>
+</html>
+<script src="MensShoes.js"></script>

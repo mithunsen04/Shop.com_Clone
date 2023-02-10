@@ -12,7 +12,7 @@ function signin(e) {
       localStorage.setItem("currentUser", JSON.stringify(old_data[i]));
       
       alert("Sign In Successfull");
-      
+      // window.Location.href = "../project.html";
       document.getElementById("email").value="";
       document.getElementById("password").value="";
       console.log(outputName)
@@ -26,3 +26,7 @@ function signin(e) {
       
 }
 
+function onClickMenu() {
+  document.getElementById("menu").classList.toggle("icon");
+  document.getElementById("nav").classList.toggle("change");
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="icon" type="image/x-icon" href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg">
+
+    <script src="https://kit.fontawesome.com/f276ecc4c7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="orderpage.css">
+
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+            text-decoration: none;
+            font-family: Arial;
+        }
+
+        .top-section {
+    font-family: Arial;
+    margin-top: -22px;
+    margin-left: -10px;
+    margin-right: -10px;
+  
+}
+
+.navbar{
+    text-decoration: none;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.nav-first-section,
+.nav-second-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-first-section {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.nav-second-section {
+    padding-bottom: 15px;
+}
+
+.child {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    margin-left: -140px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.child>a {
+    color: #202340;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo>img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.humbergar-div,
+.logo {
+    margin-left: 25px;
+}
+
+.humbergar-div {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.child-second-section,
+.second-logo {
+    margin-right: 25px;
+}
+
+.child-second-section {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#mic{
+padding-top: 12px;
+font-size: 20px;
+cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+select+input {
+    padding: 8px 17px;
+    width: 100%;
+    border: none;
+    border-left: 1px solid black;
+    font-size: 15px;
+}
+/* select+input:focus{
+    border: hidden;
+} */
+
+    form {
+        border: 1px solid black;
+        border-radius: 50px;
+        overflow: hidden;
+        width: 100%;
+        background: white;
+        display: flex;
+        flex-direction:row;
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: column;
+        /* background: white; */
+        width: 45%;
+        margin-left: -8%;
+    }
+
+    .btn1 {
+        background-color: #202340;
+        margin-left: 18px;
+        height: 45px;
+        width: 30px;
+        padding-right: 15px;
+        border-radius: 0px 50px 50px 0px;
+        cursor: pointer;
+    }
+
+.btn1>img {
+    width: 75%;
+}
+
+.navbar {
+    background: #f0f1f7;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   
+}
+
+.child-second-section>a,
+.humbergar-div>a {
+    color: #202340;
+}
+
+
+.second-logo>img {
+    color: white;
+}
+
+a:hover {
+    color: #00a8ca
+}
+
+.btn1>img {
+    color: white;
+}
+
+.top-section {
+    background-color: #202340;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.child-second-section p {
+    border: 1px solid black;
+    width: 25%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.cart-section {
+    position: relative;
+
+}
+
+.cart-section a {
+    color: #202340;
+}
+
+.cart-count {
+    position: absolute;
+    top: -29px;
+    left: 7px;
+    background-color: white;
+    font-size: 15px;
+}
+
+
+/* .....................................Text Animation................................................... */
+.page{
+    display: flex;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  font-size: 36px;
+  font-family: Raleway;
+  font-weight: bold;
+  position: absolute;
+  left: 48%;
+  top:65%;
+  z-index: -10;
+  /* top:-350px */
+}
+
+.typewriter {
+	/* width: 21.5ch; */
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 3s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 40ch; 
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <p>1st time customers save 25% on SHOP.COM exclusive brands using code FIRST250FF. Max $25 discount. Terms
+            Apply. <span style="text-decoration: underline;">Click Here</span> </p>
+    </div>
+    <div class="navbar">
+
+        <div class="nav-first-section">
+            <!-- ............................logo-div(1st-part-of-navbar)......................................................... -->
+            <div class="logo" style="cursor: pointer;">
+                <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="" onclick="fun1()">
+            </div>
+
+            <!-- ............................Input-section-div(1st-part-of-navbar)......................................................... -->
+            <div class="input-section">
+                <form action="" id="form">
+                    <select id="NamesSorting">
+                        <option value="empty">All Departments</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Beauty">Beauty</option>
+                        <option value="Books">Books</option>
+                        <option value="Business">Business</option>
+                        <option value="Cameras">Cameras</option>
+                        <option value="Clothes">Clothes</option>
+                    </select>
+                    <input id="search" type="text" placeholder="Search SHOP.COM...">
+                    <i id="mic"class="fa-solid fa-microphone"></i>
+                    <button class="btn1">
+                        <i class="fa fa-search" aria-hidden="true" style="color:white"></i>
+                    </button>
+                </form>
+            </div>
+            <!-- ............................LayeredSale div img section(1st-part-of-navbar)......................................................... -->
+
+            <div class="second-logo">
+                <img src="https://img.shop.com/Image/header2013/layered-us-eng-105972-blk-friday-banner-300x50-11670940062489.jpg"
+                    alt="">
+            </div>
+
+        </div>
+        <!-- ................................1st part of navbar ended here -->
+
+        <!-- ................................2ndst part of navbar started from here............................ -->
+        <div class="nav-second-section">
+
+            <div class="humbergar-div">
+                <a href="#" class="humbergar-icon"><i class="fa-solid fa-bars"
+                        style="font-size: 1.7rem ; width: 35px; "></i>Category</a>
+
+            </div>
+
+            <div class="child">
+                <a href="../exclusive.html">Exclusive Brands</a>
+                <a href="../clothe.html">Stores</a>
+                <a href="../beauty.html">Deals</a>
+                <a href="">Departments</a>
+                <a href="">ShopBuddy</a>
+            </div>
+
+            <div class="child-second-section">
+
+                <a href="/signinPage/signin.html" class="signIn" id="signin-page1"><i class="fa-solid fa-circle-user "
+                    style="font-size: 1.7rem ;padding-right: 7px;"></i> <span id="user-name">Sign In </span> </a>
+
+
+            <a href="/orderpage/orderpage.html" class="signIn" id="order-page1"><i class="fa-solid fa-rotate-left"
+                    style="font-size: 1.7rem ;padding-right: 7px;"></i>Orders</a>
+
+
+            <a href="/cartpage/cartpage.html" class="signIn" id="cart-page1"><i class="fa-solid fa-cart-shopping"
+                    style="font-size: 1.7rem ;padding-right: 7px;"></i>Cart</a>
+
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------- navbar ended here ------------------------------------------------------------->
+    <div class="page">
+        <div class="cart-section" style="z-index: -10;">
+            <h1>Orders</h1>
+            <!-- <h2>Shipment from Cutter & Buck</h2> -->
+            <hr>            
+           <div class="cart-product">
+ 
+                </div>
+            </div>
+        </div> 
+        
+<!-- .......................................text animation html................................................................. -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
+
+        <div class="container">
+        <div class="typewriter"><span id="user" style="color:orangered; font-style: italic; "></span> for purchasing from us! </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+<script src="orderpage.js"></script>
+<script>
+function fun1(){
+        window.open("../project.html","_self")
+    }
+</script>

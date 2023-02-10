@@ -1,9 +1,12 @@
+
+
+
 let cart_product_arr = JSON.parse(localStorage.getItem("cart-list"))||[];
 total_price()
 
 showdata(cart_product_arr);
 function proceedtopayment(){
-    window.open("../Payment/address.html","_self")
+    window.open("address.html","_self")
 }
 function showdata(mensData){
     document.querySelector(".cart-product").textContent = "";
@@ -109,4 +112,3 @@ function quantity(elem,index,div){
 
 //username
 document.querySelector("#user-name").textContent=JSON.parse(localStorage.getItem("userName"))||"Sign In"
-        

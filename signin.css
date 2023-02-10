@@ -1,3 +1,278 @@
+/* Navbar CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial;
+}
+.nav-first-section , .nav-second-section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+.nav-first-section{
+/* padding-top: 15px;
+margin-bottom: 10px; */
+padding-top: 1%;
+margin-bottom: 1%;
+}
+.nav-second-section{
+padding-bottom: 1%;
+}
+
+.child {
+display: flex;
+justify-content: space-between;
+/* width: 650px; */
+width: 43%;
+/* margin-left: -140px; */
+/* margin-left: -140%; */
+font-family: Roboto,Arial,Helvetica,sans-serif;
+/* border: 2px solid red; */
+font-size: 15px;
+margin-left: 1%;
+}
+.child > a{
+color: #202340;
+}
+
+.logo > img{
+width: 100%;
+}
+.humbergar-div , .logo{
+margin-left: 1.5%;
+}
+.humbergar-div{
+/* width: 150px; */
+width: 50%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+.child-second-section {
+margin-right: 25px;
+}
+.second-logo{
+margin-right: 1.5%;
+text-align: right;
+}
+.child-second-section{
+width: 22%;
+display: flex;
+justify-content: space-between;
+}
+select{
+/* padding: 13px 15px;
+border: none;
+border-radius: 50px;
+border: 2px solid black; */
+
+padding: 2% 2%;
+border: none;
+border-radius: 50px;
+/* border: 2px solid black; */
+}
+
+
+
+#form1{
+border: 1px solid black;
+border-radius: 50px;
+overflow: hidden;
+width: 85%;
+background: white;
+}
+.input-section{
+width: 20%;
+margin-left: -150px;
+}
+
+.btn1{
+    background-color: #202340; 
+    /* height: 45px; 
+    width: 30px; 
+    padding-right: 15px; 
+    border-radius: 0px 50px 50px 0px; */
+
+    height: 103%; 
+    width: 10%; 
+    padding-right: 1%; 
+    border-radius: 0px 50% 50% 0%;
+}
+.btn1>img{
+width: 75%;
+}
+.navbar{
+background: #f0f1f7;
+position: sticky;
+top: 0;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+margin-top: -0.5%;
+z-index: 10;
+}
+.child-second-section > a, .humbergar-div > a{
+color: #202340;
+}
+.nav-bar-input{
+font-size: 15px;
+width: 100%;
+height: 20px;
+border: none;
+
+}
+
+.nav-bar-input:focus {
+outline: none;
+font-size: 15px;
+}
+
+.second-logo > img{
+color: white;
+
+}
+a:hover{
+color: #00a8ca
+}
+.btn1 > img{
+color: white;
+}
+
+.top-section{
+background-color: #202340;
+color: white;text-align: center;padding: 7px;
+font-size: 100%;
+font-family: Roboto, Arial, Helvetica, sans-serif;
+padding-bottom: 0.8%;
+}
+.child-second-section p {
+border: 1px solid black;
+width: 25%;
+border-radius: 50%;
+text-align: center;
+}
+.cart-section{
+position: relative;
+
+}
+.cart-section a{
+color: #202340;
+}
+
+
+
+.cart-count{
+position: absolute;
+top: -55%;
+left: 5%;
+background-color: white;
+font-size:15px;
+}
+/* .....................................HAMBERGER-MENU........................................... */
+
+#menu{
+width: 30px;
+height: 30px;
+margin: 0px 0 0px 25px;
+cursor: pointer;
+z-index: 100;
+}
+
+.bar{
+height: 5px;
+width: 100%;
+background-color: #202340;
+display: block;
+border-radius:5px;
+transition: 0.3s ease;
+} 
+
+#bar1{
+transform: translateY(-4px);
+}
+#bar3{
+transform: translateY(4px);
+}
+
+.nav li a{
+color: #202340;
+text-decoration: none;
+}
+
+.nav li a:hover{
+border: 1px solid #fff;
+/* padding: 10px 20px; */
+}
+
+.nav li{
+list-style: none;
+padding: 16px 0;
+margin-left: 20px;
+}
+.nav h4{
+margin-left: 20px;
+margin-top: 180px;
+margin-bottom: 10px;
+}
+
+.nav li:nth-child(2){
+margin-left: 20px;
+}
+.nav{
+padding: 0;
+margin: 0 20px ;
+transition: 1s ease;
+display: none;
+}
+.icon .bar{
+background-color: #202340;
+}
+
+.icon #bar1{
+transform: translateY(5px) rotate(-45deg);
+}
+
+.icon #bar3{
+transform: translateY(-5px) rotate(45deg);
+}
+
+.icon #bar2{
+opacity: 0;
+}
+
+.change{
+background-color: #ffffff;
+height: 100vh;
+margin: 0;
+position: absolute;
+font-size: 15px;
+top: 0;
+z-index: -100;
+width: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+@media only screen and (max-width:1000px){
+.change{
+    width: 40%;
+}
+}
+
+@media only screen and (max-width:500px){
+.change{
+    width: 100%;
+}
+}
+
+
+                                        /*              Navbar CSS Ended                  */
+  
+                                        /*                 Main CSS started               */ 
+
 main{
     height: 410px;
     font-weight: 400;
@@ -114,3 +389,111 @@ margin:15px 0px 0px 15px;
  
 }
 
+
+                          /*                 Main CSS Ended                        */
+                          
+                          /*                 Footer CSS Started                    */
+
+.first-div{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    background:  #545871;
+    color: white;
+    border-bottom: 1px solid grey;
+}
+.emailbox{
+    padding: 2px 80px 2px 0px;
+    /* border: 2px solid rgb(255, 9, 9); */
+}
+.first-div label, span{
+    font-size: .8125rem;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+}
+.first-div button{
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: none;
+}
+.first-div button:hover{
+    background:  #202340;
+    color: white;
+}
+.first-div div:nth-child(1){
+    /* border: 2px solid black; */
+   padding-left: 10px;
+}
+.first-div div:nth-child(2){
+    /* border: 2px solid black; */
+   padding-right: 10px;
+}
+.first-div div:nth-child(2) > button{
+  margin-left: 6px;
+}
+.first-div div:nth-child(1) > input{
+    margin-left: 6px;
+}
+.second-div {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin: auto;
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 10px 0px 10px 0px;
+    background: #545871;
+}
+.second-div a{
+    padding: 0px 4px 0px 4px;
+    border-left: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+.second-div a:first-child{
+    border: none;
+}
+.footer-logos{
+    /* border: 2px solid white; */
+    width:20px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    position: absolute;
+    left: 88%;
+}
+.footer-logos > img{
+    /* border: 2px solid white; */
+    width:100%;
+    padding: 0px 5px;
+}
+
+.footer-copyright-section{
+    /* border-top: 2px solid blue; */
+    width: 100%;
+    margin: auto;
+    font-size: .6875rem;
+    padding-top: 10px;
+    line-height: 20px;
+    
+}
+.links{
+    text-decoration: underline;
+    padding: 0px 2px 0px 4px;
+    border-left: 1px solid rgb(0, 0, 0);
+    color: #202340;
+}
+.footer-img-section{
+    /* border-top: 2px solid black; */
+    width:95%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+.footer-img-section > img:nth-child(7){
+    height: 90px;
+}

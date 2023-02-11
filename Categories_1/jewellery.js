@@ -189,6 +189,9 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+//------------------------------------------
 const showDetails = (index)=>{
     
     var arr =  jewellery.filter(function(elm,i){

@@ -1,7 +1,7 @@
 
 
 
-let cart_product_arr = JSON.parse(localStorage.getItem("cart-list"))||[];
+let cart_product_arr = JSON.parse(localStorage.getItem("cart"))||[];
 total_price()
 
 showdata(cart_product_arr);
@@ -19,7 +19,7 @@ function showdata(mensData){
         div.setAttribute("class","product-box");
         div.innerHTML = 
         `<div id="sub-cart-product">
-        <div id="cart-product-imgdiv"><img id="cart-product-img" src=${elem.img} alt="product"></div>
+        <div id="cart-product-imgdiv"><img id="cart-product-img" src=${elem.image_url} alt="product"></div>
         <div class="product-detail">
             <h3 class="product-name">${elem.name}</h3>
             <h3 class="price" style="margin-bottom:6px; font-weight:bold">$ ${elem.price}</h3>
@@ -29,7 +29,7 @@ function showdata(mensData){
                 <p style="font-size:15px; font-weight:bold">Cashback</p>
             </div>
             <p style="font-size:15px; font-weight:bold">Item: #190777978227</p>
-            <p style="font-size:15px; font-weight:bold">Sold by: ${elem.soldBy}</p>
+            <p style="font-size:15px; font-weight:bold">Merchant: ${elem.merchant}</p>
             <p style="font-size:15px; font-weight:bold">Category: ${elem.category}</p>
             <div id="quantity-div">
                 <p style="font-size:15px; font-weight:bold">Quantity</p>
@@ -79,7 +79,7 @@ function showdata(mensData){
 function removeItem(elem,index){
     event.preventDefault();
     cart_product_arr.splice(index,1);   
-    localStorage.setItem("cart-list",JSON.stringify(cart_product_arr)); 
+    localStorage.setItem("cart",JSON.stringify(cart_product_arr)); 
     showdata(cart_product_arr);
     subtotal = cart_product_arr.reduce(function(elem1,curr){
         localStorage.setItem("local-subtotal",JSON.stringify((Number(elem1) + (Number(curr.price)*Number(curr.quantity)))))

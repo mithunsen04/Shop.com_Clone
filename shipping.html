@@ -461,7 +461,7 @@
                 var div1=document.createElement("div")
                 div1.setAttribute("id","box12")
                 var img=document.createElement("img")
-                img.setAttribute("src",ele.img);
+                img.setAttribute("src",ele.image_url);
                 var img1=document.createElement("img")
                 img1.setAttribute("src","https://img.shop.com/Image/resources/images/cashback-icon.svg");
                 
@@ -473,13 +473,13 @@
                 price.innerText="$"+ele.price;
                 
                 var ratio=document.createElement("p")
-                ratio.innerText= ele.ratio;
+                ratio.innerText= ele.strikedoffprice;
                 
                 var category=document.createElement("p")
                 category.textContent= "Category: "+ele.category;
                 
                 var sold=document.createElement("p")
-                sold.textContent= "Sold By:"+ele.soldBy;
+                sold.textContent= "Merchant:"+ele.merchant;
                 
                 var div2=document.createElement("div")
                 div2.setAttribute("id","boxx12") 

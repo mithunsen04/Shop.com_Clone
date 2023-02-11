@@ -106,6 +106,7 @@ function displaydetails(){
         box.append(stock,btn);
         btn.addEventListener("click",function(){
             cart(elem);
+            alert("Added To Cart");
         });
         document.querySelector("#image").append(im);
         document.querySelector("#dt").append(na,save,cbp,hr1,line,hr2,line2,box);

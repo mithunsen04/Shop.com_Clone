@@ -190,6 +190,8 @@ window.onclick = function(event) {
   }
 }
 
+//------------------------------------------
+
 //see details
 const showDetails = (index)=>{
     

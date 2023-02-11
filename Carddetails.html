@@ -291,6 +291,7 @@ body {
 </body>
 </html>
 <script>
+    
     document.querySelector(".proceed-btn").addEventListener("click",Payment)
     function Payment(){
         event.preventDefault();
@@ -299,14 +300,14 @@ body {
         var month = document.querySelector(".month>select").value;
         var year = document.querySelector(".year>select").value;
         var CVV = document.querySelector("#cvv-text").value;
-        console.log(number=="1234567890",month=="march",year=="2023",CVV=="520")
-        if(number=="1234567890"&&month=="march"&&year=="2023"&&CVV=="520"){
+        console.log(number=="1234567890",month=="march",year=="2023",CVV=="123")
+        if(number=="1234567890"&&month=="march"&&year=="2023"&&CVV=="123"){
          window.open("./OTP.html" , "_self")
         }else{
             alert("Enter correct Card Information")
         }  
     }
     function fun1(){
-        window.open("../project.html","_self")
+        window.open("../index.html","_self")
     }
 </script>

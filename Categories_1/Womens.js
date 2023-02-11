@@ -205,20 +205,24 @@ var womensData = [
     })
 
 
-  var   flag = true;
-    cartdata.map(function(elm){
-      if(elm.id === warr[0].id){
-        elm.quit++;
-        flag = false;
-      }
-    })
+  // var   flag = true;
+  //   cartdata.map(function(elm){
+  //     if(elm.id === warr[0].id){
+  //       elm.quit++;
+  //       flag = false;
+  //     }
+  //   })
+  //   console.log(warr[0]);
+  //   if(flag){
+  //     cartdata.push(warr[0]);
 
-    if(flag){
-      cartdata.push(warr[0]);
+  //   }
+  cartdata.push(warr[0]);
+    let count = cartdata.length ;
+    console.log(count)
+    document.querySelector('.cart-count').innerText = count ;
 
-    }
-
-    // cartdata.push(warr[0]);
+    
     console.log(cartdata);
     localStorage.setItem("cart",JSON.stringify(cartdata));
   }
@@ -240,6 +244,10 @@ var womensData = [
       }
     }
   }
+
+
+//------------------------------------------
+
   const showDetails = (index)=>{
     
     var arr =  womensData.filter(function(elm,i){

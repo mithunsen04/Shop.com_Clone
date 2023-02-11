@@ -16,7 +16,7 @@ function signin(e) {
       document.getElementById("email").value="";
       document.getElementById("password").value="";
       console.log(outputName)
-      window.open("../project.html","_self")
+      window.open("./shubham_branch","_self")
       return;
     }
   }

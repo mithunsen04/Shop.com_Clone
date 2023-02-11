@@ -204,6 +204,8 @@ window.onclick = function(event) {
     }
   }
 }
+
+
 //see details
 const showDetails = (index)=>{
     
@@ -211,7 +213,7 @@ const showDetails = (index)=>{
       return i===index;
      })
   localStorage.setItem('detail',JSON.stringify(arr));
-  window.location.href = 'details.html'
+  window.location.href = '../details.html'
     }
 
 

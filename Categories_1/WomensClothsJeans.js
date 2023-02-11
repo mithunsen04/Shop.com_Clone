@@ -153,9 +153,18 @@ var   flag = true;
 
   }
   // cartdata.push(warr[0]);
-  console.log(cartdata);
-  localStorage.setItem("cart",JSON.stringify(cartdata));
-}
+//   console.log(cartdata);
+//   localStorage.setItem("cart",JSON.stringify(cartdata));
+// }
+cartdata.push(warr[0]);
+    let count = cartdata.length ;
+    console.log(count)
+    document.querySelector('.cart-count').innerText = count ;
+
+    
+    console.log(cartdata);
+    localStorage.setItem("cart",JSON.stringify(cartdata));
+  }
 
 function myFunction() {
   document.getElementById("myDropdown2").classList.toggle("show");
@@ -179,6 +188,8 @@ function feedbackgiven(){
   swal("Thank You!", "For Your FeedBack","success");
 }
 
+
+
 //see details
 const showDetails = (index)=>{
     
@@ -186,7 +197,7 @@ const showDetails = (index)=>{
       return i===index;
      })
   localStorage.setItem('detail',JSON.stringify(arr));
-  window.location.href = 'details.html'
+  window.location.href = '../details.html'
     }
 
 // filter best match 

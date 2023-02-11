@@ -74,6 +74,10 @@ var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
 
 // console.log(document.querySelector(".cart-count"));
 
+// cart logo count-----------------------------
+var count = localStorage.getItem("cartcount") || 0;
+document.querySelector(".cart-count").innerText = count;
+
 // search functionality
 
 document.querySelector("#NamesSorting").addEventListener("change", changesearch);

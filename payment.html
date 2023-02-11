@@ -563,7 +563,7 @@
         var promo=document.getElementById("bottom-right3a").value;
         console.log(promo)
         if(promo==="masai30"){
-            document.querySelector("#bottom-right2").innerText="Coupon applied 😢";
+            document.querySelector("#bottom-right2").innerText="Coupon applied ";
             document.querySelector("#bottom-right2").style.color="green";
             document.querySelector("#bottom-right2").style.fontWeight="600"
             var discount=JSON.parse(localStorage.getItem("local-subtotal"))
@@ -582,7 +582,7 @@
             document.querySelector("#right206>#discount").textContent=off
         }
         else{
-            document.querySelector("#bottom-right2").innerText="Wrong Coupon applied 🤣🤣🤣";
+            document.querySelector("#bottom-right2").innerText="Wrong Coupon applied!!!";
             document.querySelector("#bottom-right2").style.color="red";
             document.querySelector("#bottom-right2").style.fontWeight="600"
         }

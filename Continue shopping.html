@@ -142,14 +142,14 @@ button:hover{
     <!-- TOP SECTION  -->
     <div id="navbar">
         <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="shop.com logo" onclick="fun1()">
-        <a href="../project.html" >Continue Shopping</a>
+        <a href="index.html" >Continue Shopping</a>
     </div>
     <!-- MIDDLE SECTON  -->
     <!-- <h1 style="text-align: center;font-style: italic;font-size: xx-large;font-family: cursive;">TOTAL PRICE ₹0</h1> -->
     <form class="credit-card">
         <img src="https://media.tenor.com/40bYuytgRvYAAAAj/hedge-pay-hpay.gif" alt="" onclick="fun1()">
         <p style="font-size:xx-large ;">Your Order Has Been Placed</p>
-        <button onclick="func2()"><a href="./orderpage.html" style="text-decoration: none;color: white;">Continue Shopping</a> </button>
+        <button onclick="func2()"><a href="index.html" style="text-decoration: none;color: white;">Continue Shopping</a> </button>
       </form>
       <!-- footer  -->
           <div id="cart-footer" style="bottom: 0;">
@@ -171,9 +171,9 @@ button:hover{
     localStorage.setItem("cartcount",0)
     localStorage.setItem("cart-list",JSON.stringify([]))
     function func2(){
-        window.open("/orderpage/orderpage.html","_self")
+        window.open("index.html","_self")
     }
     function fun1(){
-        window.open("../project.html","_self")
+        window.open("index.html","_self")
     }
 </script>

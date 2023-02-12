@@ -201,22 +201,8 @@ var womensData = [
     swal("Added To Cart");
    var warr =  womensData.filter(function(elm,i){
      return i===index;
-
     })
 
-
-  // var   flag = true;
-  //   cartdata.map(function(elm){
-  //     if(elm.id === warr[0].id){
-  //       elm.quit++;
-  //       flag = false;
-  //     }
-  //   })
-  //   console.log(warr[0]);
-  //   if(flag){
-  //     cartdata.push(warr[0]);
-
-  //   }
   cartdata.push(warr[0]);
     let count = cartdata.length ;
     console.log(count)
@@ -256,7 +242,7 @@ var womensData = [
        })
 
     localStorage.setItem('detail',JSON.stringify(arr));
-    window.location.href = '../details.html'}
+    window.location.href = './details.html'}
   
   function handlePriceSort(){ 
     console.log("hii");

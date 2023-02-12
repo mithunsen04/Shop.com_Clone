@@ -141,24 +141,17 @@ function feedbackgiven(){
 // cart
 var cartdata = JSON.parse(localStorage.getItem("cart")) || [];
 function addtocart(index){
-  swal("Added To Cart")
- var warr = HomePro.filter(function(elm,i){
+  swal("Added To Cart");
+ var warr =  HomePro.filter(function(elm,i){
    return i===index;
-
   })
 
-var   flag = true;
-  cartdata.map(function(elm){
-    if(elm.id === warr[0].id){
-      elm.quit++;
-      flag = false;
-    }
-  })
-
-  if(flag){
-    cartdata.push(warr[0]);
-
-  }
+cartdata.push(warr[0]);
+  let count = cartdata.length ;
+  console.log(count)
+  document.querySelector('.cart-count').innerText = count ;
+  
+  
   // cartdata.push(warr[0]);
   console.log(cartdata);
   localStorage.setItem("cart",JSON.stringify(cartdata));
@@ -192,7 +185,7 @@ const showDetails = (index)=>{
       return i===index;
      })
   localStorage.setItem('detail',JSON.stringify(arr));
-  window.location.href = '../details.html'
+  window.location.href = './details.html'
     }
 
 

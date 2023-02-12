@@ -571,7 +571,131 @@ a:hover {
     visibility: hidden;
    }
   }
-  
+  /* ******************** */
+  #to_resolve_error{
+   
+    height: 150vh;
+    width: 100%;
+  }
+  #to_resolve_error_kids{
+    height: 75vh;
+    width: 100%;
+  }
+  #to_resolve_error_mentshirt{
+    height: 155vh;
+    width: 100%;
+  } 
+  #to_resolve_error_womenshirt{
+    height: 75vh;
+    width: 100%;
+  }
+  /* ************************ */
+  .first-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    background:  #545871;
+    color: white;
+    border-bottom: 1px solid grey;
+    }
+    .emailbox{
+    padding: 2px 80px 2px 0px;
+    border: none;
+    }
+    .first-div label, span{
+    font-size: .8125rem;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    }
+    .first-div > div:last-child > button{
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: none;
+    }
+    .first-div > div:last-child > button:hover{
+    background:  #202340;
+    color: white;
+    }
+    .first-div div:nth-child(1){
+    padding-left: 10px;
+    }
+    .first-div div:nth-child(2){
+    padding-right: 10px;
+    }
+    .first-div div:nth-child(2) > button{
+    margin-left: 6px;
+    }
+    .first-div div:nth-child(1) > input{
+    margin-left: 6px;
+    }
+    .second-div {
+    display: flex;
+    justify-content: space-between;
+    width:99%;
+    margin: auto;
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 10px 0px 10px 6px;
+    background: #545871;
+    /* border: 3px solid white; */
+    }
+    .second-div a{
+    padding: 0px 4px 0px 4px;
+    border-left: 1px solid rgb(255, 255, 255);
+    color: white;
+    }
+    .second-div a:first-child{
+    border: none;
+    }
+    .footer-logos{
+    width:20px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    position: absolute;
+    left: 88%;
+    }
+    .footer-logos > img{
+    width:100%;
+    padding: 0px 5px;
+    }
+    
+    .footer-copyright-section{
+    width: 95%;
+    margin-left: 10px;
+    font-size: .6875rem;
+    padding-top: 10px;
+    line-height: 20px;
+    }
+    .links{
+    text-decoration: underline;
+    padding: 0px 2px 0px 4px;
+    border-left: 1px solid rgb(0, 0, 0);
+    color: #202340;
+    }
+    .footer-img-section{
+    width:95%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    }
+    .footer-img-section > img:nth-child(7){
+    height: 90px;
+    }
+    
+    /* Cleaning & Health Have Never Been More Important Section */
+    .product {
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    width: 92.5%;
+    margin: auto;
+    margin-top: 20px;
+    }
+  /* ************************ */
   @media only screen and (max-width: 600px) {
     /* Small Screen  */
    

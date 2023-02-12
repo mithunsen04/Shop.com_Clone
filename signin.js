@@ -15,8 +15,7 @@ function signin(e) {
       // window.Location.href = "../project.html";
       document.getElementById("email").value="";
       document.getElementById("password").value="";
-      console.log(outputName)
-      window.open("./shubham_branch","_self")
+      window.open("index.html","_self")
       return;
     }
   }
